@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Nunito;
+  src: url(./../assets/fonts/Nunito-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(./../assets/fonts/Nunito-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+html {
+  font-size: 16px;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.header-logo {
+  max-width: 40px;
+}
+
+.fa-bars {
+  font-size: 30px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: baseline;
+  font-size: 20px;
+  display: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #ed6336;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.btn {
+  background-color: #ed6336;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0 30px 30px 30px;
+  border: none;
+  padding: 16px 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.btn-nav {
+  background-color: transparent;
+  border: 2px solid #ed6336;
+  color: black;
+  margin-bottom: 0;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.article {
+  border-radius: 30px;
+  width: 85%;
+  height: 230px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  border-radius: 30px;
+}
+
+article:first-of-type {
+  background-image: url(./../assets/imgs/01.jpeg)
+}
+
+article:nth-of-type(2) {
+  background-image: url(./../assets/imgs/02.jpeg)
+}
+
+article:last-of-type {
+  background-image: url(./../assets/imgs/03.jpeg);
+  margin-bottom: 0;
+}
+
+.article-category {
+  text-transform: uppercase;
+  z-index: 2;
+  margin-bottom: 0.25rem;
+  font-size: 12px;
+}
+
+.category-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  z-index: 2;
+  margin-bottom: 1rem;
+}
