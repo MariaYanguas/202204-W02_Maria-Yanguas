@@ -76,6 +76,11 @@ html {
   margin-bottom: 0;
 }
 
+.btn-nav:hover {
+  background-color: #ed6336;
+  color: white;
+}
+
 .btn-section {
   color: white;
   display: inline-flex;
@@ -189,6 +194,56 @@ article:last-of-type {
     padding-bottom: 16px;
   }
 
+
+  .nav-item:hover {
+    border-bottom: 2px solid #ed6336;
+    cursor: pointer;
+  }
+
+  .nav-item:hover a {
+    color: #ed6336;
+
+  }
+
+  .nav-item:hover .fa-sort-down {
+    color: #ed6336;
+  }
+
+  .nav-item.nav-dropdown {
+    position: relative;
+  }
+
+  .nav-item.nav-dropdown:hover {
+    color: #ed6336;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    width: 245px;
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    color: black;
+  }
+
+  .submenu-item {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  .submenu-item:hover {
+    color: #ed6336;
+    cursor: pointer;
+  }
+
+  .nav-item.nav-dropdown:hover .submenu {
+    display: inline-block;
+  }
+
   .nav-item-nav .nav-container li.nav-item:last-of-type {
     margin-right: 0;
   }
@@ -234,6 +289,12 @@ article:last-of-type {
     padding: 24px 32px;
   }
 
+  .btn-section:hover {
+    border: 2px solid #ed6336;
+    background-color: white;
+    color: #ed6336;
+  }
+
   .articles-container {
     display: flex;
     flex-direction: row;
@@ -252,6 +313,16 @@ article:last-of-type {
     display: none;
   }
 
+  article:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article::before {
+    display: none;
+  }
+
   .article-content {
     display: flex;
     flex-direction: column;
@@ -259,9 +330,12 @@ article:last-of-type {
     display: none;
   }
 
-  .category-title {
+  article:hover .article-content {
+    display: inline-flex;
     margin-bottom: 0;
   }
 
-
+  .category-title {
+    margin-bottom: 0;
+  }
 }
